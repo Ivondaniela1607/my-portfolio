@@ -1,0 +1,420 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Merriweather', serif; 
+}
+
+/* #### variables #### */
+
+:root{
+
+
+  /* Tipografía */
+
+  --normal: 16px;
+  --large: 24px;
+  --xtra-large: 40px;
+  --small: 13px;
+
+  /* Color */
+
+  --blue-turquesa-color: #00AFB9;
+  --magenta-color: #F07167;
+  --beige-claire-color: #FDFCDC;
+  --gray-claire-color: #5E6472;
+
+  
+  /* font-family: 'Lora', serif;
+  font-family: 'Merriweather', serif; */
+
+
+
+}
+
+/* #### variables #### */
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section Header nav #### */
+/* ###################################### */
+/* ###################################### */
+
+.header{
+  border: 1px red solid;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 50px;
+  color: var(--beige-claire-color);
+  font-size: var(--normal);
+  font-weight: bold;
+}
+
+.nav{
+  border: 1px white solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  max-width: 90%;
+  margin: 0 auto;
+  
+}
+
+.nav-container{
+  border: 1px red solid;
+  border-bottom: 1px var(--magenta-color) solid;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgba(94, 100, 114, 0.050);
+}
+
+.icons i{
+  color: var(--beige-claire-color);
+  font-size: var(--large);
+  cursor: pointer;
+  padding-left: 30px;
+  border-radius: 100px;
+  
+}
+
+.icons i:hover{
+  color: var(--blue-turquesa-color);
+}
+
+.nav-container-items a:hover{
+  color: var(--blue-turquesa-color);
+}
+
+
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section Header nav #### */
+/* ###################################### */
+/* ###################################### */
+
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section Hero#### */
+/* ###################################### */
+/* ###################################### */
+
+
+
+.hero{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-detail{
+  border: 1px red solid;
+  text-align: center;
+}
+
+.hero-detail h1{
+  color: var(--beige-claire-color);
+  padding: 30px 0 40px;
+  text-transform: uppercase;
+  font-size: var(--xtra-large);
+  font-family: 'Lora', serif;
+  
+}
+
+.hero-detail h3{
+  color: var(--beige-claire-color);
+  font-family: 'Lora', serif;
+  padding-top: 100px;
+  font-size: var(--large);
+
+}
+
+.hero-button{
+  padding-top: 100px;
+}
+
+
+.hero-button{
+  border: 1px yellow solid;
+  display: flex;
+  
+  justify-content: center;
+  padding-bottom: 150px;
+
+  
+}
+
+.hero-button div{
+  border: 1px red solid;
+  margin: 0 100px;
+  
+  
+}
+
+.hero-button a{
+  color: var(--beige-claire-color);
+  text-decoration: none;
+  font-size: var(--normal);
+  margin: 10px 20px 20px;
+  padding: 10px 20px;
+  font-weight: 700;
+ 
+  
+}
+
+.button1{
+  border: 2px var(--blue-turquesa-color) solid;
+  background: var(--blue-turquesa-color);
+  border-radius: 10px;
+  
+}
+
+.button2{
+  border: 2px var(--magenta-color) solid;
+  background: var(--magenta-color);
+  border-radius: 10px;
+  
+}
+
+.button2:hover{
+  
+  background: transparent;
+}
+.button1:hover{
+  
+  background: transparent;
+}
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section Hero#### */
+/* ###################################### */
+/* ###################################### */
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá comienza -->Section Proyectos#### */
+/* ###################################### */
+/* ###################################### */
+
+.project-container{
+  border: 1px blue solid;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-container h1{
+  text-align: center;
+  color: var(--gray-claire-color);
+  text-transform: uppercase;
+  padding: 60px 0 30px;
+  font-family: 'Lora', serif;
+  font-size: var(--xtra-large);
+  
+
+}
+.projects{
+  border-top: 2px var(--magenta-color) solid;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  margin-bottom: 200px;
+  padding-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-area:  "area1 area2 area3"
+              "area3 area4 area5";
+  
+  
+
+}
+
+.project-detail{
+  border: 1px red solid;
+  margin: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  
+  
+  
+}
+
+
+.project-detail h3{
+  
+  font-size: var(--large);
+  color: var(--beige-claire-color);
+  
+  margin: 20px 0;
+  
+
+}
+
+.project-detail p{
+  font-size: var(--normal);
+  color: var(--beige-claire-color);
+  padding: 0 30px;
+  
+}
+
+.arcade{
+  background-image: linear-gradient(rgba(94,100,114, 0.8),rgba(94,100,114, 0.8)), url("../img/christian-lambert-7BFrHKycXg0-unsplash.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  transition: all .3s;
+}
+.ryhe{
+  background-image: linear-gradient(rgba(94,100,114, 0.8),rgba(94,100,114, 0.8)), url("../img/christian-lambert-XR0kq2VDIUo-unsplash.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 1s;
+  
+}
+.coldplay{
+  background-image: linear-gradient(rgba(94,100,114, 0.8),rgba(94,100,114, 0.8)), url("../img/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 1s;
+}
+.seafret{
+  background-image: linear-gradient(rgba(94,100,114, 0.8),rgba(94,100,114, 0.8)), url("../img/xps-bXfQLglc81U-unsplash.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+.sade{
+  background-image: linear-gradient(rgba(94,100,114, 0.8),rgba(94,100,114, 0.8)), url("../img/oliver-pecker-HONJP8DyiSM-unsplash.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+.theluminers{
+  background-image: linear-gradient(rgba(94,100,114, 0.8),rgba(94,100,114, 0.8)), url("../img/scott-graham-5fNmWej4tAA-unsplash.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.arcade:hover{
+  background-size: 150%;
+  background-position: center;
+  transition: all .3s;
+}
+.ryhe:hover{
+  background-size: 150%;
+  background-position: center;
+  transition-duration: 1s;
+}
+.coldplay:hover{
+  background-size: 150%;
+  background-position: center;
+  transition-duration: 1s;
+}
+.seafret:hover{
+  background-size: 150%;
+  background-position: center;
+  transition-duration: 1s;
+}
+.sade:hover{
+  background-size: 150%;
+  background-position: center;
+  transition-duration: 1s;
+}
+.theluminers:hover{
+  background-size: 150%;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.visitar{
+  text-decoration: none;
+  border: 2px var(--blue-turquesa-color) solid;
+  padding: 5px 10px;
+  background-color: var(--blue-turquesa-color);
+  color: var(--beige-claire-color);
+  border-radius: 5px;
+  font-size: var(--normal);
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+.visitar:hover{
+  border: 2px var(--magenta-color) solid;
+  background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###################################### */
+/* ###################################### */
+/* #### Acá termina -->Section Proyectos#### */
+/* ###################################### */
+/* ###################################### */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
